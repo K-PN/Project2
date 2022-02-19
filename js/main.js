@@ -2,6 +2,16 @@
 (function ($) {
     "use strict";
 
+    /*[ Coming Soon ]
+    ===========================================================*/
+    var tooltipSpan = document.getElementById('tooltipp-span');
+
+    window.onmousemove = function (e) {
+    var x = e.clientX,
+        y = e.clientY;
+    tooltipSpan.style.top = (y + 20) + 'px';
+    tooltipSpan.style.left = (x + 20) + 'px';
+    };
     /*[ Load page ]
     ===========================================================*/
     $(".animsition").animsition({
@@ -56,7 +66,7 @@
 
     if($(window).scrollTop() > posWrapHeader) {
         $(headerDesktop).addClass('fix-menu-desktop');
-        $(wrapMenu).css('top',0); 
+        $(wrapMenu).css('top',0);
     }  
     else {
         $(headerDesktop).removeClass('fix-menu-desktop');
@@ -67,10 +77,12 @@
         if($(this).scrollTop() > posWrapHeader) {
             $(headerDesktop).addClass('fix-menu-desktop');
             $(wrapMenu).css('top',0); 
+            $("#logo").attr("src", "images/logo/logo2.png");
         }  
         else {
             $(headerDesktop).removeClass('fix-menu-desktop');
-            $(wrapMenu).css('top',posWrapHeader - $(this).scrollTop()); 
+            $(wrapMenu).css('top',40); 
+            $("#logo").attr("src", "images/logo/logo.png");
         } 
     });
 

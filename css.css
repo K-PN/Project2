@@ -4,6 +4,19 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/* comingsoon css */
+.tooltipp {
+    text-decoration:none;
+    position:relative;
+}
+.tooltipp span {
+    display:none;
+}
+.tooltipp:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
 
 @media print {
     *,
