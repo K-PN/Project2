@@ -1,13 +1,4 @@
-/*!
- * Bootstrap v4.0.0-beta (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-
 /* MY FIX */
-
 
 /* slide */
 
@@ -26581,11 +26572,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 @font-face {
     font-family: NotoSans-ExtraLight;
     src: url('fonts/NotoSans/NotoSans-ExtraLight.ttf');
-}
-
-@font-face {
-    font-family: NotoSans-Medium;
-    src: url('fonts/NotoSans/NotoSans-Medium.ttf');
 }
 
 @font-face {
